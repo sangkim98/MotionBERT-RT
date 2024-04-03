@@ -1,0 +1,32 @@
+channels:
+  - defaults
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch=2.0.1=*cuda11.8*
+  - torchvision=*=*cu118*
+  - torchaudio=*=*cu118*
+  - cuda-toolkit=11.8
+  - cuda-nvcc=11.8
+  - coverage
+  - easydict
+  - flake8
+  - json_tricks
+  - matplotlib
+  - munkres
+  - opencv
+  - parameterized
+  - pillow
+  - prettytable
+  - pip:
+    - chumpy
+    - nvitop
+    - opencv-python
+    - open3d
+    - roma
+    - smplx[all]
+    - torch-tb-profiler
+    - xtcocotools
+    - -r mmlab_requirements.txt
